@@ -69,5 +69,18 @@ namespace EntityFrameworkDemo
             tbxUnitPriceUpdate.Text = dgwProducts.CurrentRow.Cells[2].Value.ToString();
             tbxStockAmountUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
         }
+
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(tbxSearch.Text);
+        }
+
+        private void SearchProducts(string key)
+        {
+            //var result = _productDal.GetAll().Where(p=>p.Name.Contains(key)).ToList(); //Sorguyu (kod içinde) Listeden atar
+
+            var result = _productDal.GetByName(key); //Sorguyu DB deki Products tablosunda atar
+            dgwProducts.DataSource = result;
+        }
     }
 }

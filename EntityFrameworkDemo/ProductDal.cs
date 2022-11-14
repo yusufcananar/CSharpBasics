@@ -45,5 +45,13 @@ namespace EntityFrameworkDemo
             }
         }
 
+        public List<Product> GetByName(string key)
+        {
+            using (ETradeContext context = new ETradeContext())
+            {
+                //Sorguyu DB deki Products tablosunda atar
+                return context.Products.Where(p => p.Name.Contains(key)).ToList(); 
+            }
+        }
     }
 }
