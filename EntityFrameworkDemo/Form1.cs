@@ -82,5 +82,13 @@ namespace EntityFrameworkDemo
             var result = _productDal.GetByName(key); //Sorguyu DB deki Products tablosunda atar
             dgwProducts.DataSource = result;
         }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            
+            var result = _productDal.GetById(1001);
+            List<Product> products = new List<Product> { result };
+            dgwProducts.DataSource = products;
+        }
     }
 }

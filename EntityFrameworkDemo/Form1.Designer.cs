@@ -48,6 +48,7 @@
             this.dgwProducts = new System.Windows.Forms.DataGridView();
             this.tbxSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
+            this.btnGetById = new System.Windows.Forms.Button();
             this.gbxUpdate.SuspendLayout();
             this.gbxAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
@@ -241,11 +242,22 @@
             this.lblSearch.TabIndex = 17;
             this.lblSearch.Text = "Search";
             // 
+            // btnGetById
+            // 
+            this.btnGetById.Location = new System.Drawing.Point(24, 1);
+            this.btnGetById.Name = "btnGetById";
+            this.btnGetById.Size = new System.Drawing.Size(75, 23);
+            this.btnGetById.TabIndex = 18;
+            this.btnGetById.Text = "Get By Id";
+            this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 370);
+            this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.btnDelete);
@@ -287,6 +299,7 @@
         private System.Windows.Forms.DataGridView dgwProducts;
         private System.Windows.Forms.TextBox tbxSearch;
         private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.Button btnGetById;
     }
 }
 
