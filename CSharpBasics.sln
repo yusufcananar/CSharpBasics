@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetDemo", "AdoNetDemo\Ad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{F602D0A8-813C-487E-85E2-D68AD3271792}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "016Generics", "016Generics\016Generics.csproj", "{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "017Attributes", "017Attributes\017Attributes.csproj", "{2B591406-0FFE-4279-AA99-DE98FF13CCC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +235,22 @@ Global
 		{F602D0A8-813C-487E-85E2-D68AD3271792}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F602D0A8-813C-487E-85E2-D68AD3271792}.Release|x86.ActiveCfg = Release|Any CPU
 		{F602D0A8-813C-487E-85E2-D68AD3271792}.Release|x86.Build.0 = Release|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{6EEC4FBE-4D7A-4BBD-8382-0780794241F7}.Release|x86.Build.0 = Release|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Debug|x86.Build.0 = Debug|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Release|x86.ActiveCfg = Release|Any CPU
+		{2B591406-0FFE-4279-AA99-DE98FF13CCC3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
