@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace _019Delegates
@@ -39,7 +40,28 @@ namespace _019Delegates
             var x = myDelegate3(5, 6);
 
             Console.WriteLine(x);
+
+            //func delegate'i kullanımı
+            Func<int, int, int> subs = Cikar;
+            Console.WriteLine(subs(5, 27));
+
+
+            Func<int> getRandomNumber = delegate () {
+                Random random = new Random();
+                return random.Next(1, 100);
+            };
+
+            Console.WriteLine(getRandomNumber());
+
+            Thread.Sleep(100);
+            Func<int> getRandomNumber2 = () => new Random().Next(1,100);
+            Console.WriteLine(getRandomNumber2());
             Console.ReadLine();
+        }
+
+        static int Cikar(int x, int y)
+        {
+            return x - y;
         }
     }
 
